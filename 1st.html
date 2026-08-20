@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+</head>
+<body>
+    <h1>Form Submission</h1>
+    <form>
+        <fieldset>
+            <label for="fn">Full Name</label>
+            <input type="text" id="fn" name="fn" required>
+            <br><br>
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter your email" id="email" name="email" required>
+            <br><br>
+            <label for="password">Password</label>
+            <input type="password" placeholder="Enter your password" id="password" name="password" required>
+            <br><br>
+            <h2>Select your Gender</h2>
+            <label for="male">
+                <input type="radio" name="gender" id="male" value="male" required>
+                Male
+            </label>
+            <br>
+            <label for="female">
+                <input type="radio" name="gender" id="female" value="female">
+                Female
+            </label>
+            <br>
+            <label for="other">
+                <input type="radio" name="gender" id="other" value="other">
+                Other
+            </label>
+            <br><br>
+            <h2>Mention your skills</h2>
+            <label>
+                <input type="checkbox" name="skills" value="html">
+                HTML
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="skills" value="css">
+                CSS
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="skills" value="javascript">
+                JavaScript
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="skills" value="python">
+                Python
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="skills" value="other">
+                Other
+            </label>
+            <br><br>
+            <h2>Select your country</h2>
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
+                <option value="">Select a country</option>
+                <option value="india">India</option>
+                <option value="united-states">United States</option>
+                <option value="united-kingdom">United Kingdom</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+                <option value="germany">Germany</option>
+                <option value="france">France</option>
+                <option value="japan">Japan</option>
+            </select>
+            <br><br>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
