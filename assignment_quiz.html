@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Application</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .quiz {
+            background-color: white;
+            width: 450px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px gray;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .question {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        input {
+            display: none;
+        }
+
+        label {
+            display: block;
+            background-color: #3498db;
+            color: white;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        label:hover {
+            background-color: #2980b9;
+        }
+
+        .correct,
+        .incorrect {
+            display: none;
+            font-weight: bold;
+            margin-top: 15px;
+            font-size: 18px;
+        }
+
+        .correct {
+            color: green;
+        }
+
+        .incorrect {
+            color: red;
+        }
+
+        
+        #correct:checked ~ .correct {
+            display: block;
+        }
+
+        
+        #wrong1:checked ~ .incorrect,
+        #wrong2:checked ~ .incorrect,
+        #wrong3:checked ~ .incorrect {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="quiz">
+
+        <h1>Quiz Application</h1>
+
+        <div class="question">
+            1. Which language is used to create the structure of a webpage?
+        </div>
+
+        
+        <input type="radio" name="answer" id="wrong1">
+        <label for="wrong1">A. Python</label>
+
+        <input type="radio" name="answer" id="correct">
+        <label for="correct">B. HTML</label>
+
+        <input type="radio" name="answer" id="wrong2">
+        <label for="wrong2">C. Java</label>
+
+        <input type="radio" name="answer" id="wrong3">
+        <label for="wrong3">D. C++</label>
+
+    
+        <div class="correct">
+             Correct Answer!
+        </div>
+
+        <div class="incorrect">
+             Incorrect Answer!
+        </div>
+
+    </div>
+
+</body>
+</html>
